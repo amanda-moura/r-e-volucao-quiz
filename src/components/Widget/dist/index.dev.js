@@ -9,6 +9,16 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n  width: 100%;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject3() {
   var data = _taggedTemplateLiteral(["\n  padding: 24px 32px 32px 32px;\n  & > *:first-child {\n    margin-top: 0;\n  }\n  & > *:last-child {\n    margin-bottom: 0;\n  }\n  ul {\n    list-style: none;\n    padding: 0;\n  }\n"]);
 
@@ -41,21 +51,22 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-//Variável para as caixinhas
+// Variável para as caixinhas
 var Widget = _styledComponents["default"].div(_templateObject(), function (_ref) {
   var theme = _ref.theme;
   return theme.colors.primary;
 }, function (_ref2) {
   var theme = _ref2.theme;
   return theme.colors.mainBg;
-}); //Alterações no cabeçalho do Widget
+}); // Alterações no cabeçalho do Widget
 
 
 Widget.Header = _styledComponents["default"].div(_templateObject2(), function (_ref3) {
   var theme = _ref3.theme;
   return theme.colors.primary;
-}); //Realizando alterações no conteúdo(content) do Widget
+}); // Realizando alterações no conteúdo(content) do Widget
 
 Widget.Content = _styledComponents["default"].div(_templateObject3());
+Widget.Content = _styledComponents["default"].input(_templateObject4());
 var _default = Widget;
 exports["default"] = _default;

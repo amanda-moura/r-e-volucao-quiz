@@ -1,13 +1,11 @@
 import styled from 'styled-components';
 
-//Variável para as caixinhas
+// Variável para as caixinhas
 const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
-  background-color: ${({ theme }) => {
-    return theme.colors.mainBg;
-  }};
+  background-color: ${({ theme }) => theme.colors.mainBg};
   border-radius: 4px;
   overflow: hidden;
   h1, h2, h3 {
@@ -23,7 +21,7 @@ const Widget = styled.div`
   }
 `;
 
-//Alterações no cabeçalho do Widget
+// Alterações no cabeçalho do Widget
 Widget.Header = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -36,7 +34,7 @@ Widget.Header = styled.div`
   }
 `;
 
-//Realizando alterações no conteúdo(content) do Widget
+// Realizando alterações no conteúdo(content) do Widget
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
   & > *:first-child {
@@ -49,6 +47,10 @@ Widget.Content = styled.div`
     list-style: none;
     padding: 0;
   }
+`;
+
+Widget.Content = styled.input`
+  width: 100%;
 `;
 
 export default Widget;
