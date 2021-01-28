@@ -1,28 +1,66 @@
 {
-    "bg": "https://p2.trrsf.com/image/fget/cf/1200/628/middle/images.terra.com/2014/08/29/armazenamentofotodestaqueistock.jpg",
-    "title": "Quiz CSS da Alura",
+    "bg": "https://i.pinimg.com/originals/67/57/fe/6757fe56d7f532c18ca5d50de1392791.gif",
+    "title": "Alura Quiz - Amanda",
     "description": "Teste os seus conhecimentos sobre a (r)evolução dos meios de armazenamentos de dados e vamos ver o quanto você sabe ou se lembra sobre o assunto.",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "image": "https://media2.giphy.com/media/9FTr62YLn194b8XDHi/giphy.gif?cid=ecf05e47wac4bpt6ywiceg3pydcasr4p4khi7ez0r2w1jtml&rid=giphy.gif",
+        "title": "Quais são os tipos de armazenamento de dados?",
+        "description": "",
+        "answer": 0,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "magnéticos, ópitco, eletrônico e nuvem;",
+          "ópitco, eletrônico e nuvem;",
+          "não volátil",
+          "Nenhuma das alternativas"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://media.giphy.com/media/uocFNNEo1vcGc/giphy.gif",
+        "title": "Qual foi o primeiro dispositivo de armazenamento de dados?",
+        "description": "",
+        "answer": 1,
+        "alternatives": [
+           "Tambor de memória ou Tubo de Willians",
+           "Cartão perfurado ou punched card, punch card, IBM card, ou Hollerith card",
+           "Cartão perfurado e o Cassete",
+           "Nenhuma das alternativas"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l2QDRkQtiuugmBHQ4/giphy.gif",
+        "title": "Qual foi o primeiro dispositivo a chegar na casa dos Gigabytes de armazenamentos?",
+        "description": "",
+        "answer": 2,
+        "alternatives": [
+           "Disquete",
+           "Fita Cassete",
+           "IBM 3380",
+           "UNISERVO"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/QqkRs73FlKO52/giphy.gif",
+        "title": "O Pen-Drive é marcado na história pois... ",
+        "description": "",
+        "answer": 3,
+        "alternatives": [
+           "... colocou fim nos CDs e SSDs, além de ser um armazenamento portátil com dimensões de bolso",
+           "... colocou fim nos HDs e ZIPs Drives, além de ser um armazenamento portátil com dimensões de bolso",
+           "... colocou fim nos SD Cards e HDs, além de ser um armazenamento portátil com dimensões de bolso",
+           "... colocou fim nos disquetes e ZIPs Drives, além de ser um armazenamento portátil com dimensões de bolso"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/l0HUekRx5Npl3Lpbq/giphy.gif",
+        "title": "Qual a ordem correta das ultimos dispositivos lançados? ",
+        "description": "",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+          "Pen Drive, SD Card, SSD e Clound Storage",
+          "Disquete, Pen Drive, HD e Clound Storage",
+          "Pen Drive, SD Card, HD e em Nuvem",
+          "Nenhuma das Alternativas"
         ]
       }
     ],

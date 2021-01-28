@@ -9,6 +9,8 @@ import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizLogo from '../src/components/QuizLogo';
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 
 // const Title = styled.h1`
 //   font-size: 50px;
@@ -42,7 +44,7 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-        <title> Alura Quiz - Amanda</title>
+        <title>{db.title}</title>
       </Head>
       <QuizContainer>
         <QuizLogo />
@@ -63,20 +65,18 @@ export default function Home() {
               // console.log('Fazendo uma submissão por meio do react');
             }}
             >
-              <input
-                onChange={function (infosDoEvento) {
-                  // console.log(infosDoEvento.target.value);
-                  // state
-                  setName(infosDoEvento.target.value);
-                }}
-                placeholder="Me conta aqui com é seu nome"
+              {/* Criamos nossa "tag personalizada" de input */}
+              <Input
+                // state
+                name="nomeDoUsuario"
+                onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
+                placeholder="Me conta aqui como é seu nome"
+                value={name}
               />
-              <button type="submit" disabled={name.length === 0}>
-                <b>
-                  Clique aqui para jogar
-                  {name}
-                </b>
-              </button>
+              {/* Criamos nossa "tag personalizada" de botao */}
+              <Button type="submit" disabled={name.length === 0}>
+                {`Clique aqui para jogar ${name}`}
+              </Button>
             </form>
           </Widget.Content>
         </Widget>

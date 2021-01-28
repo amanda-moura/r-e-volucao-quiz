@@ -10,7 +10,7 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  width: 100%;\n"]);
+  var data = _taggedTemplateLiteral(["\n  outline: 0;\n  text-decoration: none;\n  color: ", ";\n  background-color: ", ";\n  padding: 10px 15px;\n  margin-bottom: 8px;\n  cursor: pointer;\n  border-radius: ", ";\n  transition: .3s;\n  display: block;\n  \n  &:hover,\n  &:focus {\n    opacity: .5;\n  }\n"]);
 
   _templateObject4 = function _templateObject4() {
     return data;
@@ -67,6 +67,15 @@ Widget.Header = _styledComponents["default"].div(_templateObject2(), function (_
 }); // Realizando alterações no conteúdo(content) do Widget
 
 Widget.Content = _styledComponents["default"].div(_templateObject3());
-Widget.Content = _styledComponents["default"].input(_templateObject4());
+Widget.Topic = _styledComponents["default"].a(_templateObject4(), function (_ref4) {
+  var theme = _ref4.theme;
+  return theme.colors.contrastText;
+}, function (_ref5) {
+  var theme = _ref5.theme;
+  return "".concat(theme.colors.primary, "40");
+}, function (_ref6) {
+  var theme = _ref6.theme;
+  return theme.borderRadius;
+});
 var _default = Widget;
 exports["default"] = _default;
